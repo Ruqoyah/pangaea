@@ -4,7 +4,7 @@ import App from './components/App';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://pangaea-interviews.now.sh/api/graphql',
+  uri: process.env.REACT_APP_GRAPHQL_SERVER,
   cache: new InMemoryCache()
 });
 

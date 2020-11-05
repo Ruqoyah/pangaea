@@ -81,7 +81,7 @@ const App = () => {
   }
 
   const { loading, error, data } = useQuery(PRODUCTS(currencySelected));
-
+// console.log(data, 'loaddataing')
   useEffect(() => {
     setAllProducts(data && data.products)
   }, [data])
